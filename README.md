@@ -24,6 +24,6 @@ Select the folder where you extracted the project (the one containing manifest.j
 
 The extension should now appear in your list, you can pin it to the toolbar if you want quick access.
 
-Open the extension menu and configure it with your own printer address and preferred position.
+Open the extension menu and configure it with your own printer address and preferred position, then press "Save".
 
 Go to your printer’s camera page (http://<PRINTER_IP>:8000) and you’ll see a new LED switch (and Dark Mode toggle).
