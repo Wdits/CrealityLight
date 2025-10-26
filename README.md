@@ -7,7 +7,7 @@ You no longer need to use any apps just to toggle your printer’s camera light 
 
 <img width="1122" height="114" alt="image" src="https://github.com/user-attachments/assets/3301c3dd-54d7-4a48-9865-5adb1cd39fba" />
 
-## How to Install
+## How to Install & Use
 
 Download or clone this repository.
 Click the green Code → Download ZIP button, then extract it somewhere on your computer.
