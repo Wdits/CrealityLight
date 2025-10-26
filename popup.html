@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Creality Light Switch</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="pop">
+      <header class="pop-header">
+        <svg class="pop-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M9 21h6v-1H9v1zm3-20C7.48 1 4 4.48 4 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-4.52-3.48-8-8-8z"/>
+        </svg>
+        <h1>Creality Light Switch</h1>
+      </header>
+
+      <section class="pop-section">
+        <label class="pop-label" for="printerIp">Printer IP</label>
+        <input id="printerIp" class="pop-input" type="text" placeholder="192.168.1.3" autocomplete="off" inputmode="decimal" />
+      </section>
+
+      <section class="pop-section pos">
+        <div class="pos-head">Overlay position</div>
+        <div class="seg">
+          <label class="seg-item">
+            <input type="radio" name="overlayPos" value="left" />
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 5h18v2H3zM3 10h10v4H3zM3 18h18v2H3z"/></svg>
+            <span>Left</span>
+          </label>
+          <label class="seg-item">
+            <input type="radio" name="overlayPos" value="center" />
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 5h18v2H3zM7 10h10v4H7zM3 18h18v2H3z"/></svg>
+            <span>Center</span>
+          </label>
+          <label class="seg-item">
+            <input type="radio" name="overlayPos" value="right" />
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 5h18v2H3zM11 10h10v4H11zM3 18h18v2H3z"/></svg>
+            <span>Right</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="pop-actions">
+        <button id="save" class="btn primary">Save</button>
+        <span id="status" class="status"></span>
+      </section>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+  </html>
+
+

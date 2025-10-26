@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+.cls-switch-container {
+  position: fixed;
+  bottom: 24px;
+  z-index: 2147483647;
+}
+
+/* Position presets */
+.cls-switch-container.pos-right { right: 88px; }
+.cls-switch-container.pos-center { left: 50%; transform: translateX(-50%); }
+.cls-switch-container.pos-left { left: 24px; }
+
+.cls-panel {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(20,20,20,0.60);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.cls-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cls-icon {
+  fill: #ffffff;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4));
+  width: 22px;
+  height: 22px;
+}
+
+.cls-title {
+  font-weight: 600;
+  letter-spacing: .2px;
+  font-size: 15px;
+}
+
+.cls-switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 36px;
+}
+
+.cls-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.cls-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #616161;
+  transition: .2s;
+  border-radius: 34px;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.cls-slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .2s;
+  border-radius: 50%;
+}
+
+input:checked + .cls-slider {
+  background-color: #00e676;
+}
+
+input:checked + .cls-slider:before {
+  transform: translateX(28px);
+}
+
+.cls-dark-row { display: flex; align-items: center; gap: 10px; margin-left: 8px; }
+.cls-subtitle { font-size: 15px; opacity: .95; font-family: inherit; letter-spacing: .2px; font-weight: 600; }
+
+/* Dark theme for the page */
+.cls-dark body, .cls-dark { background: #0f1113 !important; color: #e5e7eb !important; }
+video { background: #000; }
+
+
